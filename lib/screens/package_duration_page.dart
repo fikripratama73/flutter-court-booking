@@ -1,3 +1,4 @@
+import 'package:court_booking/widgets/build_package_card.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -20,6 +21,16 @@ class PackageDurationPage extends StatelessWidget {
         centerTitle: true,
         automaticallyImplyLeading: true,
         backgroundColor: Color(0xFFFFFFFF),
+      ),
+      body: Container(
+        margin: EdgeInsets.only(top: 20),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              BuildPackageCard(information: "Perfect for training", price: 50000, hours: 1)
+            ],
+          ),
+        ),
       ),
     );
   }
