@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         title: Text(
           "Sports Courts",
           style: GoogleFonts.poppins(
-            fontSize: 24,
+            fontSize: 18,
             fontWeight: FontWeight.w600,
             color: Color(0xFF1F2937),
           ),
@@ -25,6 +25,8 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
+            SizedBox(height: 20),
+
             BuildBookingCard(
               title: "Futsal Court A",
               category: "Indoor • Air Conditioned",
